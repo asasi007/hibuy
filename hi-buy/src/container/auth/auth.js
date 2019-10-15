@@ -1,16 +1,23 @@
 import React from 'react';
-import Login from '../../components/login/login';
+import HorizontalLoginForm from '../../components/login/login';
 
 class Auth extends React.Component {
     constructor(props) {
       super(props);
-      this.state = {       
+      this.state = {   
+        form:''    
       };     
     }
   
+  form = () => {
+    console.log('hello');    
+  }
+
     render() {
       return (
-        <Login />
+
+        <HorizontalLoginForm  />
+        
       );
     }
   }
