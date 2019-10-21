@@ -1,0 +1,37 @@
+{
+  "projects": {
+    "default": "hibuy",
+    "master": "hibuy",
+    "prod": "hibuy"
+  },
+  "ci": {
+    "createConfig": {
+      "master": {
+        "env": "staging",
+        "firebase": {
+          "apiKey": "${STAGE_FIREBASE_API_KEY}",
+          "authDomain": "hibuy-70f93.firebaseapp.com",
+          "databaseURL": "https://hibuy-70f93.firebaseio.com",
+          "projectId": "hibuy-70f93",
+          "storageBucket": "hibuy-70f93.appspot.com",
+          "messagingSenderId": "358065499039",
+          "appId": "1:358065499039:web:1d640602d59ce28463ebaa",
+          "measurementId": "G-Q14CXG49C5"
+        }
+      },
+      "prod": {
+        "env": "production",
+        "firebase": {
+          "apiKey": "${PROD_FIREBASE_API_KEY}",
+          "authDomain": "hibuy-70f93.firebaseapp.com",
+          "databaseURL": "https://hibuy-70f93.firebaseio.com",
+          "projectId": "hibuy-70f93",
+          "storageBucket": "hibuy-70f93.appspot.com",
+          "messagingSenderId": "358065499039",
+          "appId": "1:358065499039:web:1d640602d59ce28463ebaa",
+          "measurementId": "G-Q14CXG49C5"
+        }
+      }
+    }
+  }
+}
